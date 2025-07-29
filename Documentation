@@ -1,0 +1,18 @@
+Lysmikser:
+ -> Begynnerguide
+ -> Oversikt //Navn på alle knappene, og funksjonene deres
+  ++ Av/På knapp
+    Skrur av og på strømmen. Pass på at blackout er på (?)
+  ++ Preset sliders 1-24
+    Disse sliderne styrer lysstyrken på fargene som er satt på i DMX patch <a>. 
+    Man kan bytte mellom preset 1-12 og 13-24 ved å trykke på "UPPER"-knappen. 
+  ++ Flash knapper
+    Disse knappene flasher enten preseten som er på den plassen (flash 1 -> preset 1 ect-), 
+    eller scenen som er lagret til memory på samme plassen. Dette avgjøres av om "CH FLASH" er på eller av. 
+    Knappen funger på samme måte som å sette slideren på max, bare at man gjør det umiddelbart.
+  ++ Memory sliders
+ 
+ -> Oppsett //DMX patch
+ -> Scener
+ -> Chase
+ -> Sound to light

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    const image = document.getElementById("image");
+
+    image.addEventListener('mousemove',function(event) {
+      const imageRect = image.getBoundingClientRect();
+      const mouseX = event.clientX - imageRect.left;
+      const mouseY = event.clientY - imageRect.top;
+      console.log(`Mouse pos on image X=${mouseX}, Y=${mouseY}`);
+    });
+  </script>
+</head>
+<body>
+  <img src="image.png" id="image">
+</body> 
