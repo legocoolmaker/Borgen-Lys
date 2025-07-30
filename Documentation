@@ -12,6 +12,19 @@ Lysmikser:
     Knappen funger på samme måte som å sette slideren på max, bare at man gjør det umiddelbart.
   ++ Memory sliders //107,1147,520,933
   ++ Modes panel //1156,1583,144,232
+  ++ Sound to light/ Chase to memory sliders //810,1142,529,920
+  ++ Sound to light/ Chase to memory flash knapper //810,1143,964,1028
+  ++ Memory bank //1157,1247,339,642
+  ++ Sound to light knapp //1157,1247,656,842
+  ++ Special knapper //1157,1247,857,1049
+  ++ Knapper oppe i høyre hjørne //1624,1883,143,231
+  ++ Flash preset & memory //1258,1432,943,1049
+  ++ Main knapper // 1442,1616,943,1049
+  ++ Mode knapper // 1626,1885,943,1049
+  ++ Main sliders // 1257,1518,525,931
+  ++ Chase slider // 1525,1703,524,931
+  ++ X-fade & Speed //1709,1884,524,931
+  ++ Interface //1254,1896,239,515
 
  
  -> Oppsett //DMX patch

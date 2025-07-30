@@ -1,4 +1,7 @@
-l = input("Skriv in de 4 verdiene: ").split(",")
-l = [int(x)/2000 if int(x)>2 else int(x)/1200 for nr,x in enumerate(l)]
-print([[l[0],l[1]],[l[2],l[3]]])
+while True:
+  l = input("Skriv in de 4 verdiene: ").split(",")
+  l = [int(x) for x in l]
 
+  
+
+  print(f"[[{(l[0]/2000):.4f},{(l[1]/2000):.4f}],[{(l[2]/1120):.4f},{(l[3]/1120):.4f}]]")

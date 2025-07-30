@@ -30,26 +30,46 @@
 
   <script>
     const imageContainer = document.getElementById("imageContainer");
-    const overlay = document.getElementById("overlay")
+    const overlay = document.getElementById("overlay");
     // [[StartX,EndX],[StartY,EndY]] (Normal numbers)
     const rectArray = [
-      [[0.1435, 0.187], [0.021, 0.052]], // Av/på
-      [[0.578, 0.7915], [0.072, 0.116]], // modes panel
-      [[0.054, 0.574], [0.472, 0.5245]], // Flash knapper
-      [[0.0535, 0.6235], [0.049, 0.256]], // Preset sliders
-      [[0.0535, 0.5735], [0.26, 0.4665]] //Memory sliders
-    ]
+      [[0.1435,0.1870],[0.0375,0.0929]], // Av/på
+      [[0.5785,0.6235],[0.3027,0.5732]], // Memory bank
+      [[0.5780,0.7915],[0.1286,0.2071]], // modes panel
+      [[0.5785,0.6235],[0.5857,0.7518]], // Sound to light knapper
+      [[0.5785,0.6235],[0.7652,0.9366]], // Special knapper
+      [[0.8120,0.9415],[0.1277,0.2062]], // Knapper oppe i høyre hjørne
+      [[0.6290,0.7160],[0.8420,0.9366]], // Flash preset & memory
+      [[0.7210,0.8080],[0.8420,0.9366]], // Main knapper
+      [[0.8130,0.9425],[0.8420,0.9366]], // Mode knapper
+      [[0.6285,0.7590],[0.4688,0.8313]], // Main sliders
+      [[0.7625,0.8515],[0.4679,0.8313]], // Chase slider
+      [[0.8545,0.9420],[0.4679,0.8313]], // X-fade & speed
+      [[0.6270,0.9480],[0.2134,0.4598]], // Interface
+      [[0.4050,0.5715],[0.8607,0.9179]], // Sound to light / Chase to memory flash knapper
+      [[0.0540,0.5740],[0.8429,0.9366]], // Flash knapper
+      [[0.4050,0.5710],[0.4723,0.8214]], // Sound to light / Chase to memory sliders
+      [[0.0535,0.6235],[0.0875,0.4571]], // Preset sliders
+      [[0.0535,0.5735],[0.4643,0.8330]]  // Memory sliders
+    ];
+    const rectArrayName = ["Av/På","Memory bank","Modes panel","Sound to ligth knapper",
+    "Special knapper","Knapper oppe i høyre hjørne","Flash preset & memory","Main knapper","Mode knapper",
+    "Main sliders","Chase sliders","X-fade & speed","Interface","Sound to light / Chase to memory flash knapper","Flash knapper",
+    "Sound to light / Chase to memory sliders","Preset sliders","memory sliders"];
+
     imageContainer.addEventListener('mousemove',(e)=> {
       const rect = imageContainer.getBoundingClientRect();
       const x = e.clientX -rect.left;
       const y = e.clientY - rect.top;
 
-      rectArray.forEach((element,index) => {
+      for (const [index,element] of rectArray.entries()) {
         if ((rect.width*element[0][0])<x && x<(rect.width*element[0][1]) && (rect.height*element[1][0])<y && y<(rect.height*element[1][1])) {
           //console.log("In bounds")
-          console.log(index)
-        } 
-      });
+          console.log(rectArrayName[index]);
+          break
+        }
+      }
+      
     });
   
   </script>
