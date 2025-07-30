@@ -1,18 +1,18 @@
 Lysmikser:
  -> Begynnerguide
  -> Oversikt //Navn på alle knappene, og funksjonene deres
-  ++ Av/På knapp //287,374,42,104
+  ++ Av/På knapp //222,374,42,104
     Skrur av og på strømmen. Pass på at blackout er på (?)
   ++ Preset sliders 1-24 //107,1147?(1247),98,512
     Disse sliderne styrer lysstyrken på fargene som er satt på i DMX patch <a>. 
     Man kan bytte mellom preset 1-12 og 13-24 ved å trykke på "UPPER"-knappen. 
-  ++ Flash knapper // 108,1148,944,1049
+  ++ Flash knapper // 108,1148,944,1051
     Disse knappene flasher enten preseten som er på den plassen (flash 1 -> preset 1 ect-), 
     eller scenen som er lagret til memory på samme plassen. Dette avgjøres av om "CH FLASH" er på eller av. 
     Knappen funger på samme måte som å sette slideren på max, bare at man gjør det umiddelbart.
   ++ Memory sliders //107,1147,520,933
   ++ Modes panel //1156,1583,144,232
-  ++ Sound to light/ Chase to memory sliders //810,1142,529,920
+  ++ Sound to light/ Chase to memory sliders //810,1142,524,926
   ++ Sound to light/ Chase to memory flash knapper //810,1143,964,1028
   ++ Memory bank //1157,1247,339,642
   ++ Sound to light knapp //1157,1247,656,842
@@ -25,6 +25,9 @@ Lysmikser:
   ++ Chase slider // 1525,1703,524,931
   ++ X-fade & Speed //1709,1884,524,931
   ++ Interface //1254,1896,239,515
+  ++ lamp //728,802,31,110
+  ++ PCMCIA card //1549,1790,51,120
+  ++ Ports //860,1512,0,23
 
  
  -> Oppsett //DMX patch

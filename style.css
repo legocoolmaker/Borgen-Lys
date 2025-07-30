@@ -1,27 +1,15 @@
 body {
-  background-color: rgb(160, 186, 214);
+  background-color: rgb(34, 34, 34);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(212, 212, 212);
+  font-size: 120%;
 }
-.top-bar {
-  display: flex;
-  background-color: rgb(103, 165, 232);
+.top-bar-container {
+  width: 100%;
+  height: fit-content;
 }
-.logo {
-  font-size:large;
-  
-  
-}
-.nav-button {
-  background-color: rgb(168, 162, 187);
-  
-  border-color: rgb(71, 19, 150);
-  border-radius: 2px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-left: 5px;
-  margin-right: 5px;
-  
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 6px;
-  padding-right: 6px;
+.normal-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(212, 212, 212);
+  font-size: 120%;
 }
