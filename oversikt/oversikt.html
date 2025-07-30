@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <head>
-  <script>
-    const image = document.getElementById("image");
+  <style>
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin:auto;
 
-    image.addEventListener('mousemove',function(event) {
-      const imageRect = image.getBoundingClientRect();
-      const mouseX = event.clientX - imageRect.left;
-      const mouseY = event.clientY - imageRect.top;
-      console.log(`Mouse pos on image X=${mouseX}, Y=${mouseY}`);
-    });
-  </script>
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+      transition: filter 0.2s ease;
+    }
+
+    .overlay {
+
+    }
+  </style>
 </head>
 <body>
-  <img src="image.png" id="image">
+
+  <div class="image-container" id="imageContainer">
+    <img class="image" src="image.png" id="image">
+    <div class="overlay" id="overlay"></div>
+  </div>
+
+  <script>
+    const imageContainer = document.getElementById("imageContainer");
+    const overlay = document.getElementById("overlay")
+    // [[StartX,EndX],[StartY,EndY]] (Normal numbers)
+    const rectArray = [
+      [[0.1435, 0.187], [0.021, 0.052]], // Av/på
+      [[0.578, 0.7915], [0.072, 0.116]], // modes panel
+      [[0.054, 0.574], [0.472, 0.5245]], // Flash knapper
+      [[0.0535, 0.6235], [0.049, 0.256]], // Preset sliders
+      [[0.0535, 0.5735], [0.26, 0.4665]] //Memory sliders
+    ]
+    imageContainer.addEventListener('mousemove',(e)=> {
+      const rect = imageContainer.getBoundingClientRect();
+      const x = e.clientX -rect.left;
+      const y = e.clientY - rect.top;
+
+      rectArray.forEach((element,index) => {
+        if ((rect.width*element[0][0])<x && x<(rect.width*element[0][1]) && (rect.height*element[1][0])<y && y<(rect.height*element[1][1])) {
+          //console.log("In bounds")
+          console.log(index)
+        } 
+      });
+    });
+  
+  </script>
 </body> 
