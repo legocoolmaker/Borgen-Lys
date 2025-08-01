@@ -3,6 +3,11 @@
   
   <link rel="stylesheet" href="style.css">
   <style>
+    .page-container {
+      width: 100%;
+      height: auto;
+     
+    }
     .image-container {
       position: relative;
       width: 80%;
@@ -30,18 +35,21 @@
   </style>
 </head>
 <body>
-
+  <div class="top-bar-container">
+    <p> hallo</p>
+  </div>
   <div class="image-container" id="imageContainer"> 
     <img class="image" src="image.png" id="image">
     <div class="overlay" id="overlay"></div>
   </div>
   <div class="textContainer" id="textContainer">
-    <h2 class="caption" id="caption"></h2>
+    <h2 class="caption" id="caption"> </h2>
     <p class="normal-text" id="caption-text"></p>
   </div>
 
    
   <script>
+    //HTML objects
     const imageContainer = document.getElementById("imageContainer");
     const overlay = document.getElementById("overlay");
     const caption = document.getElementById("caption")
@@ -73,7 +81,7 @@
     const captionData = [
   {
     "Caption":"Av/på",
-    "Text":"Testing av text, <b>Bold</b> text"
+    "Text":"Skrur lysmiksern av og på. Husk å trykke på Blackout før du skrur av så ingen signaler sendes når man skrur av (? ikke sikker på om det har noe å si)"
   },
   {
     "Caption":"Memory bank",
@@ -156,9 +164,13 @@
     "Text":""
   }
 ]
-    
+    //Variables
+    let isClicked = false;
 
-    imageContainer.addEventListener('mousemove',(e)=> {
+
+    
+    function addOverlay(e){
+      
       const rect = imageContainer.getBoundingClientRect();
       const x = e.clientX -rect.left;
       const y = e.clientY - rect.top;
@@ -197,10 +209,30 @@
       if (!hovered) {
         overlay.style.clipPath = 'none';
       }
-    });
-    imageContainer.addEventListener('mouseleave',(e) => {
+    }
+    function addLeaveEffect(e){
       overlay.style.clipPath = 'none';
       overlay.style.backgroundColor = 'rgba(0,0,0,0)';
-    })
+      caption.innerHTML = " d";
+      captionText.innerHTML = "";
+    }
+    //Add the listeners in the start
+    imageContainer.addEventListener('mousemove',addOverlay)
+    imageContainer.addEventListener('mouseleave',addLeaveEffect)
+    
+    
+    
+    
+    addEventListener('click',(e)=> {
+      console.log(isClicked)
+      if (isClicked){
+        imageContainer.addEventListener('mousemove',addOverlay)
+        imageContainer.addEventListener('mouseleave',addLeaveEffect)
+      } else {
+        imageContainer.removeEventListener('mousemove', addOverlay)
+        imageContainer.removeEventListener('mouseleave',addLeaveEffect)
+      }
+      isClicked = !isClicked;
+    });
   </script>
 </body> 

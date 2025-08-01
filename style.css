@@ -3,13 +3,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(212, 212, 212);
   font-size: 120%;
+  
 }
 .top-bar-container {
   width: 100%;
-  height: fit-content;
+  height: 30%;
 }
 .normal-text{
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(212, 212, 212);
   font-size: 120%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.caption {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(212, 212, 212);
+  font-size: 150%;
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+  height: 5%;
+  border-top-width: 0.3rem;
+  border-top-color: rgb(25, 25, 25);
+  border-top-style: groove;
+  border-bottom-width: 0.3rem;
+  border-bottom-color: rgb(15, 15, 15) ;
+  border-bottom-style: groove;
 }

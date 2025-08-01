@@ -1,11 +1,11 @@
 [
   {
     "Caption":"Av/på",
-    "Text":"Testing "
+    "Text":"Skrur lysmiksern av og på. Husk å trykke på Blackout før du skrur av så ingen signaler sendes når man skrur av (? ikke sikker på om det har noe å si)"
   },
   {
     "Caption":"Memory bank",
-    "Text":""
+    "Text":"Her har man 2 knapper og et display. Nummeret på displayet viser hvilket set med lagrede scener som brukes av memorysliderne. 'UP' for å ender bank med +1 og 'DOWN' for å endre med -1. Man har valgene 0-9 og P som står for preset. Når P er på vil memorysliderne virke som presetsliderne"
   },
   {
     "Caption":"Modes panel",
