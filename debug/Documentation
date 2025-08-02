@@ -11,6 +11,7 @@ Lysmikser:
     eller scenen som er lagret til memory på samme plassen. Dette avgjøres av om "CH FLASH" er på eller av. 
     Knappen funger på samme måte som å sette slideren på max, bare at man gjør det umiddelbart.
   ++ Memory sliders //107,1147,520,933
+    Disse sliderne styrer lysstyrken på den scenen du har laget. Det er 12 slidere * 10 banks som gjør at man kan totalt lagre 120 scener.
   ++ Modes panel //1156,1583,144,232
   ++ Sound to light/ Chase to memory sliders //810,1142,524,926
   ++ Sound to light/ Chase to memory flash knapper //810,1143,964,1028

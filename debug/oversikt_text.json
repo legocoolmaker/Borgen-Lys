@@ -1,35 +1,35 @@
 [
   {
     "Caption":"Av/på",
-    "Text":"Skrur lysmiksern av og på. Husk å trykke på Blackout før du skrur av så ingen signaler sendes når man skrur av (? ikke sikker på om det har noe å si)"
+    "Text":"Skrur lysmiksern av og på. Husk å trykke på Blackout før du skrur av så du ikke får noen lyskasteren som gjør rare ting. (Har ikke opplevd det, men kan hende at det kan skje)"
   },
   {
     "Caption":"Memory bank",
     "Text":"Her har man 2 knapper og et display. Nummeret på displayet viser hvilket set med lagrede scener som brukes av memorysliderne. 'UP' for å ender bank med +1 og 'DOWN' for å endre med -1. Man har valgene 0-9 og P som står for preset. Når P er på vil memorysliderne virke som presetsliderne"
   },
   {
-    "Caption":"Modes panel",
-    "Text":"Her er knapper tilknytted <a>Memory</a>"
+    "Caption":"Avansert",
+    "Text":"Her er knapper tilknytted <a href='scener.html'>Memory</a>, <a href='chase.html'>Chase</a> mm. "
   },
   {
     "Caption":"Sound to light knapper",
-    "Text":""
+    "Text":"En av/på-knapp for sound-to-ligth og preview?(Må finne ut noe om denne)"
   },
   {
     "Caption":"Special knapper",
-    "Text":""
+    "Text":"Disse spesielle knappene er for andre ting enn lyskasterer, men kan også kobles til dmx-kablene. Dette er ting som røykmaskiner, men vi ikke noe sånt på Borgen, så det er ikke så relevant. Disse 'special' tingene settes opp i <a href='dmx.html'>DMX-Patching</a> på samme måte som presetknappene.>"
   },
   {
     "Caption":"Knapper oppe i høyre hjørne",
-    "Text":""
+    "Text":"Live- og Solo-knappen vet jeg ikke mye om, men det handler om automatisering, så man kan fjernstyre den?(Oppsett kanskje). CH Flash-knappen er en bryter som velger om Flash-knappene skal putte ut det som ligger på memory-slideren eller preset-slideren på 100% lysstyrke."
   },
   {
     "Caption":"Flash preset & memory",
-    "Text":""
+    "Text":"Har ikke peiling. Må skjekke det ut"
   },
   {
     "Caption":"Main knapper",
-    "Text":""
+    "Text":"Hold-knappen lar deg 'låse' lyset som det er akkurat på det punktet knappen ble trykket. Du kan da justere sliderne, og når du slipper opp knappen vil lyset gå direkte til den lys lysoppstillingen du har satt opp. Blackout-knappen vil sende 0 signaler på alle kanaler som gjør at alle lys skrus av og det blir svart."
   },
   {
     "Caption":"Mode knapper",
@@ -37,7 +37,7 @@
   },
   {
     "Caption":"Main sliders",
-    "Text":""
+    "Text":"Dette er sliderne som styrer den endelige lysstyrken. Vi har A og B pluss selve Main-slideren. Mainslideren styrer den totale lysstyrken, så når den er nede skal alle lysene være av. A og B styrer forskjellige ting. A styrer preset (Ihvertfall 1-12) og B styrer memory(tror det)(En styrer også chase, så må se på det)"
   },
   {
     "Caption":"Chase slider",
@@ -53,15 +53,15 @@
   },
   {
     "Caption":"Lamp",
-    "Text":""
+    "Text":"Vet ingenting om dette"
   },
   {
     "Caption":"PCMCIA card",
-    "Text":""
+    "Text":"Har ikke peiling på hva dette er. Tror ikke det er viktig, men kan muligens lagre lengre chaser eller lignende?"
   },
   {
-    "Caption":"Ports",
-    "Text":""
+    "Caption":"Porter",
+    "Text":"Vi har 4? porter ut på baksiden. Vi har DMX-kabelen, med også lyd inn og ut?(Tror det, må skjekke)(+ en fjerde)"
   },
   {
     "Caption":"Sound to light / Chase to memory flash knapper",
@@ -69,7 +69,7 @@
   },
   {
     "Caption":"Flash knapper",
-    "Text":""
+    "Text":"Disse knappene flasher enten preseten som er på den plassen (flash 1 -> preset 1 ect-), eller scenen som er lagret til memory på samme plassen. Dette avgjøres av om 'CH FLASH' er på eller av. Knappen funger på samme måte som å sette slideren på max, bare at man gjør det umiddelbart."
   },
   {
     "Caption":"Sound to light / Chase to memory sliders",
@@ -77,10 +77,10 @@
   },
   {
     "Caption":"Preset sliders",
-    "Text":""
+    "Text":"Disse sliderne styrer lysstyrken på fargene som er satt på i <a href='dmx.html'>DMX patch</a>. Man kan bytte mellom preset 1-12 og 13-24 ved å trykke på 'UPPER'-knappen."
   },
   {
     "Caption":"Memory sliders",
-    "Text":""
+    "Text":"Styrer lysstyrken på scenene som er lagret på disse sliderne. Det er 12 slidere, og 10 forskjellige 'banker' som betyr at man totalt kan lagre 120 scener."
   }
 ]
