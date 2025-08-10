@@ -1,11 +1,11 @@
 import random
 seconds = 86400
-cooldown = 115
+cooldown = 115 
 cooldown_cost = 12
-find_chance = 15
-find_chance_cost = 45
-double_find_chance = 2
-double_find_chance_cost = 10
+find_chance = 17 
+find_chance_cost = 55
+double_find_chance = 3 
+double_find_chance_cost = 15
 
 #
 def simulate(total_time,cooldown,find_chance,double_find_chance):
@@ -38,7 +38,7 @@ total_finds_dblchance = 0
 for _ in range(10000):
   total_finds_dblchance+= simulate(seconds,cooldown,find_chance,double_find_chance+1)
 total_finds_dblchance /= 10000
-
+print(total_finds_now)
 print((total_finds_cooldown-total_finds_now)/cooldown_cost)
 print((total_finds_chance-total_finds_now)/find_chance_cost)
 print((total_finds_dblchance-total_finds_now)/double_find_chance_cost)

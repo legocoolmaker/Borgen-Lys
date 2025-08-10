@@ -31,6 +31,13 @@
       clip-path: none;
       transition: clip-path 0.2s ease;
     }
+    .text-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-height: 100vh;
+    }
     
   </style>
 </head>
@@ -49,7 +56,7 @@
     <img class="image" src="images/oversikt.png" id="image">
     <div class="overlay" id="overlay"></div>
   </div>
-  <div class="textContainer" id="textContainer">
+  <div class="text-container" id="textContainer">
     <h2 class="caption" id="caption"> </h2>
     <p class="normal-text" id="caption-text"></p>
   </div>
@@ -220,7 +227,7 @@
     function addLeaveEffect(e){
       overlay.style.clipPath = 'none';
       overlay.style.backgroundColor = 'rgba(0,0,0,0)';
-      caption.innerHTML = " d";
+      caption.innerHTML = "<p class='captionText'></p>";
       captionText.innerHTML = "";
     }
     //Add the listeners in the start
