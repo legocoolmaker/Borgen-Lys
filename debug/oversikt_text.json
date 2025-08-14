@@ -41,11 +41,11 @@
   },
   {
     "Caption":"Chase slider",
-    "Text":""
+    "Text":"Dette er funksjoner knyttet til <a href='chase.html'>Chase</a> funksjonen. Slideren er lysstyrken til chasefunksjonen. Insert handler om å legge inn en spesifik scene inn i chasen akkurat nå, mens number kan man holde inn for å bytte chase (I kombinasjon med å vri på hjulet)"
   },
   {
     "Caption":"X-fade & speed",
-    "Text":""
+    "Text":"Disse sliderne er knyttet til chase funksjonen. X-fade er hvor brå overgangen mellom scenene i chasen skal skje. Denne overgangen er smooth, som betyr når den fader vil fargene blandes helt til man har kommet til den neste scenen. Speed-slideren er knyttet til sound/run-knappen når den er gul. Da vil scenene i chasen automatisk byttes etter den angitte tiden på Speed-slideren."
   },
   {
     "Caption":"Interface",
